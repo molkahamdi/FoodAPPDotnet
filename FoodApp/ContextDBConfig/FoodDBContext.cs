@@ -1,0 +1,19 @@
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using FoodApp.Models;
+namespace FoodApp.ContextDBConfig
+{
+    public class FoodAppDBContext:IdentityDbContext<ApplicationUser>
+    {
+      
+        public FoodAppDBContext(DbContextOptions<FoodAppDBContext> options):base(options)
+        {
+
+        }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+    }
+}
