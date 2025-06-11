@@ -14,6 +14,8 @@ namespace FoodApp.Models
         public String? Title { get; set; }
         public string? UserId {  get; set; }
         public string? RecipeId {  get; set; }
+        public string?Recipe{  get; set; }
+            
 
     }
 }
